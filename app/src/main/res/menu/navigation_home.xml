@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Home"
+        android:icon="@drawable/home_icon"
+        android:title="홈" />
+
+    <item
+        android:id="@+id/Book"
+        android:icon="@drawable/book_icon"
+        android:title="도서" />
+
+    <item
+        android:id="@+id/ReadingRoom"
+        android:icon="@drawable/readingroom_icon"
+        android:title="열람실" />
+
+    <item
+        android:id="@+id/setting"
+        android:icon="@drawable/setting_icon"
+        android:title="설정" />
+
+</menu>

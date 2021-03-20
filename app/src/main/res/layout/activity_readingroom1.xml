@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReadingRoom1Activity">
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkPurple"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="일반열람실 1"
+            android:textColor="@android:color/white"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:adjustViewBounds="true"
+            android:background="@color/darkPurple"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back_icon"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/ivExclamation"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/exclamationmark_icon" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomBar"
+        android:layout_below="@+id/topBar"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <GridLayout
+                android:id="@+id/group1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:columnCount="3"
+                android:orientation="horizontal"
+                android:rowCount="2"
+                tools:layout_editor_absoluteX="20"
+                tools:layout_editor_absoluteY="20">
+
+                <Button
+                    android:id="@+id/일반열람실1_1"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:gravity="center"
+                    android:onClick="sitting"
+                    android:text="1"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/일반열람실1_2"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="sitting"
+                    android:text="2"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/일반열람실1_3"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="sitting"
+                    android:text="3"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/일반열람실1_4"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="sitting"
+                    android:text="4"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/일반열람실1_5"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="sitting"
+                    android:text="5"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/일반열람실1_6"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="sitting"
+                    android:text="6"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+            </GridLayout>
+
+            <GridLayout
+                android:id="@+id/group2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/group1"
+                android:layout_marginTop="30dp"
+                android:columnCount="3"
+                android:orientation="horizontal"
+                android:rowCount="2"
+                tools:layout_editor_absoluteX="20"
+                tools:layout_editor_absoluteY="170">
+
+                <Button
+                    android:id="@+id/일반열람실1_7"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="sitting"
+                    android:text="7"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/일반열람실1_8"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="sitting"
+                    android:text="8"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/일반열람실1_9"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="sitting"
+                    android:text="9"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/일반열람실1_10"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="sitting"
+                    android:text="10"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/일반열람실1_11"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="sitting"
+                    android:text="11"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/일반열람실1_12"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="sitting"
+                    android:text="12"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+            </GridLayout>
+
+            <GridLayout
+                android:id="@+id/group3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/group2"
+                android:layout_marginTop="30dp"
+                android:columnCount="3"
+                android:orientation="horizontal"
+                android:rowCount="2"
+                tools:layout_editor_absoluteX="20"
+                tools:layout_editor_absoluteY="340">
+
+                <Button
+                    android:id="@+id/일반열람실1_13"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="sitting"
+                    android:text="13"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/일반열람실1_14"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="sitting"
+                    android:text="14"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/일반열람실1_15"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="sitting"
+                    android:text="15"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/일반열람실1_16"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="sitting"
+                    android:text="16"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/일반열람실1_17"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="sitting"
+                    android:text="17"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/일반열람실1_18"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="sitting"
+                    android:text="18"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+            </GridLayout>
+
+            <GridLayout
+                android:id="@+id/group4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/group3"
+                android:layout_marginTop="30dp"
+                android:columnCount="3"
+                android:orientation="horizontal"
+                android:rowCount="2"
+                tools:layout_editor_absoluteX="20"
+                tools:layout_editor_absoluteY="500">
+
+                <Button
+                    android:id="@+id/일반열람실1_19"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="sitting"
+                    android:text="19"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/일반열람실1_20"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="sitting"
+                    android:text="20"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/일반열람실1_21"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="sitting"
+                    android:text="21"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/일반열람실1_22"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="sitting"
+                    android:text="22"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/일반열람실1_23"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="sitting"
+                    android:text="23"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/일반열람실1_24"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="sitting"
+                    android:text="24"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+            </GridLayout>
+
+            <GridLayout
+                android:id="@+id/group5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/group1"
+                android:columnCount="2"
+                android:orientation="horizontal"
+                android:rowCount="3"
+                tools:layout_editor_absoluteX="250"
+                tools:layout_editor_absoluteY="20">
+
+                <Button
+                    android:id="@+id/일반열람실1_25"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="sitting"
+                    android:text="25"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/일반열람실1_26"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="sitting"
+                    android:text="26"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/일반열람실1_27"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="sitting"
+                    android:text="27"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/일반열람실1_28"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="sitting"
+                    android:text="28"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/일반열람실1_29"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="sitting"
+                    android:text="29"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/일반열람실1_30"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="sitting"
+                    android:text="30"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+            </GridLayout>
+
+            <GridLayout
+                android:id="@+id/group6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/group5"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/group3"
+                android:columnCount="2"
+                android:orientation="horizontal"
+                android:rowCount="3"
+                tools:layout_editor_absoluteX="250"
+                tools:layout_editor_absoluteY="210">
+
+                <Button
+                    android:id="@+id/일반열람실1_31"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="sitting"
+                    android:text="31"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/일반열람실1_32"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="sitting"
+                    android:text="32"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/일반열람실1_33"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="sitting"
+                    android:text="33"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/일반열람실1_34"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="sitting"
+                    android:text="34"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/일반열람실1_35"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="sitting"
+                    android:text="35"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/일반열람실1_36"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="sitting"
+                    android:text="36"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+            </GridLayout>
+
+            <GridLayout
+                android:id="@+id/group7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/group6"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/group1"
+                android:columnCount="2"
+                android:orientation="horizontal"
+                android:rowCount="4"
+                tools:layout_editor_absoluteX="250"
+                tools:layout_editor_absoluteY="405">
+
+                <Button
+                    android:id="@+id/일반열람실1_37"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="sitting"
+                    android:text="37"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/일반열람실1_38"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="sitting"
+                    android:text="38"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/일반열람실1_39"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="sitting"
+                    android:text="39"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/일반열람실1_40"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="sitting"
+                    android:text="40"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/일반열람실1_41"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="sitting"
+                    android:text="41"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/일반열람실1_42"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="sitting"
+                    android:text="42"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/일반열람실1_43"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="sitting"
+                    android:text="43"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/일반열람실1_44"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="sitting"
+                    android:text="44"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+            </GridLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/darkPurple">
+
+        <ImageButton
+            android:id="@+id/btnScan"
+            android:layout_width="400dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@color/darkPurple"
+            android:scaleType="fitCenter"
+            android:src="@drawable/qrcode_icon"
+            android:textColor="#000000" />
+
+        <ImageButton
+            android:id="@+id/btnRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@color/darkPurple"
+            android:scaleType="fitCenter"
+            android:src="@drawable/refresh_icon"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+</RelativeLayout>

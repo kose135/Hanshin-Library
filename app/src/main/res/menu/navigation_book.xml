@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/BookSearch"
+        android:icon="@drawable/book_search_icon"
+        android:title="도서 검색" />
+
+    <item
+        android:id="@+id/BookLoan"
+        android:icon="@drawable/book_loan_icon"
+        android:title="도서 대출중" />
+
+    <item
+        android:id="@+id/BookHistory"
+        android:icon="@drawable/book_history_icon"
+        android:title="도서 내역" />
+
+</menu>
